@@ -1,0 +1,398 @@
+html {
+    background: url(../img/text.jfif);
+    background-image: no-repeat;
+    background-size: auto;
+    overflow-y: scroll;
+}
+
+body {
+    background: url(../img/piko.jpg);
+    margin: 8px auto;
+    width: 86%;
+    border-radius: 10px;
+    background-color: hsl(203, 20%, 64%);
+}
+
+main {
+    min-height: 30em;
+}
+
+
+/**
+Navbar
+*/
+
+.navbar {
+    padding: 0.8em;
+
+    /**
+    background: url(../img/netti.jfif);
+    */
+
+    background-color: rgba(29, 82, 112, 0.3);
+    font-style: oblique;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+    background-color: hsl(179, 63%, 85%);
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #80b280;
+    text-decoration: none;
+    border-style: groove;
+    border-width: 1px;
+    border-color: coral;
+}
+
+.navbar .selected {
+    background-color: #006698;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+    /*
+    background-color: lightSteelBlue;
+    */
+}
+
+#navright {
+    float: right;
+}
+
+/**
+Footer
+*/
+
+.footer {
+    text-align: center;
+    clear: both;
+
+    /*
+    background: url(../img/whitetxt.jfif);
+    */
+    background-color: rgba(29, 82, 112, 0.5);
+}
+
+/**
+#footerImg {
+
+}
+*/
+
+#virvelImg {
+    height: 300px;
+    width: 400px;
+    float: right;
+    opacity: 0.1;
+    position: absolute;
+    top: 15%;
+    z-index: 0;
+}
+
+/**
+Article
+*/
+
+article {
+    /*
+    background-color: yellow;
+    */
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+pre {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+article.subpage {
+    width: 70%;
+    float: left;
+}
+
+.articleDiv {
+    height: auto;
+    width: auto;
+    margin: 3px;
+    padding: 25px;
+    background-color: transparent;
+}
+
+.articleDiv2 {
+    margin-left: 2%;
+    overflow: hidden;
+    text-align: left;
+}
+
+.articleDiv2,
+.articleDiv3 {
+    display: inline-block;
+}
+
+#imgme {
+    height: 120px;
+    width: 120px;
+}
+
+#imgRight {
+    float: right;
+}
+
+/**
+Aside
+*/
+
+aside {
+    width: 100%;
+    float: left;
+    background-color: hsl(206, 100%, 86%);
+    border: 10px solid hsl(206, 100%, 76%);
+}
+
+aside.subpage {
+    width: 15%;
+    float: left;
+}
+
+/**
+Search
+*/
+
+.searchDiv {
+    margin: 3px;
+    padding: 25px;
+}
+
+#searchText {
+    padding: 8px 15px;
+
+    /**
+    background: rgba(50, 50, 50, 0.2);
+    */
+
+    background: azure;
+    border: 0.1px solid #dbdbdb;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#submit_b {
+    position: relative;
+    padding: 6px 15px;
+    left: -8px;
+    border: 2px solid #207cca;
+    background-color: #207cca;
+    color: #fafafa;
+}
+
+#submit_b:hover {
+    background-color: #fafafa;
+    color: #207cca;
+    cursor: pointer;
+}
+
+.arrowSearch {
+    position: relative;
+    left: -8px;
+    background: #207cca;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.arrowSearch::after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: rgba(32, 124, 202, 0);
+    border-right-color: #207cca;
+    border-width: 10px;
+    margin-top: -10px;
+}
+
+::-webkit-input-placeholder { /* For WebKit browsers */
+    color: #d33;
+    font-family: Helvetica Neue;
+    font-weight: bold;
+}
+
+:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+    color: #d33;
+    font-family: Helvetica Neue;
+    font-weight: bold;
+}
+
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+    color: #d33;
+    font-family: Helvetica Neue;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+    color: #d33;
+    font-family: Helvetica Neue;
+    font-weight: bold;
+}
+
+/**
+Hover on picture
+*/
+
+#picHov:hover {
+    cursor: pointer;
+}
+
+/**
+Admin form
+*/
+
+#adminForm {
+    padding: 8px 15px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 1px solid #066;
+    width: 140px;
+    border-radius: 5px;
+}
+
+#print {
+    opacity: 0.3;
+    height: 200px;
+    width: 150px;
+}
+
+#adminSub {
+    cursor: pointer;
+    background-color: #006698;
+    color: white;
+    border-radius: 8px;
+    height: 30px;
+}
+
+#adminSub:hover {
+    background-color: green;
+}
+
+#adminBurns {
+    border-radius: 30px;
+    height: 200px;
+    width: 250px;
+}
+
+.error {
+    color: red;
+    margin: 3px;
+    padding: 25px;
+}
+
+#loginIco {
+    height: 30px;
+    width: 30px;
+}
+
+#logoutBNav {
+    padding: 0.4em;
+    background-color: none;
+    font-style: none;
+    border: none;
+}
+
+#inloggadSt {
+    color: white;
+}
+
+#fieldAdmin {
+    width: 20%;
+}
+
+/**
+Image page
+*/
+
+#biggerImg {
+    left: 20%;
+    border-radius: 10px;
+}
+
+#back:hover {
+    color: green;
+    text-decoration: none;
+}
+
+#back {
+    text-decoration: none;
+}
+
+#backIco {
+    height: 30px;
+    width: 30px;
+}
+
+#categoryGallery {
+    color: blue;
+}
+
+/**
+Update table
+*/
+
+#tableup {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#thup,
+#tdup {
+    text-align: left;
+    padding: 8px;
+}
+
+#trup:nth-child(even) {
+    background-color: rgba(191, 236, 179, 1);
+}
+
+#trup {
+    background-color: rgba(191, 236, 230, 1);
+}
+
+#thup {
+    background-color: #3b3902;
+    color: white;
+}
+
+#insertText {
+    padding: 8px 15px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 1px solid #066;
+    width: 140px;
+    border-radius: 5px;
+}
+
+#insertTextBigger {
+    padding: 80px 159px;
+    background: rgba(50, 50, 50, 0.2);
+    border: 1px solid #066;
+    border-radius: 5px;
+}
+
+#golid {
+    height: 200px;
+    width: 250px;
+}
+
+#golid2 {
+    height: 200px;
+    width: 210px;
+}
+
+#hast {
+    border-radius: 20px;
+}
